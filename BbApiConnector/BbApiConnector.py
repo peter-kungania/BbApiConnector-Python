@@ -51,7 +51,7 @@ class BbApiConnector(object):
 
         self._config['tokens']['access_token'] = codes.json()['access_token']
         with open(self.config_file_name, 'w') as config_file:
-            json.dump(self._config, config_file)
+            json.dump(self._config, config_file, indent=4)
             config_file.close()
         
         print("Access token updated.")
