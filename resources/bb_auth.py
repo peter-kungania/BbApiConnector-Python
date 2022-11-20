@@ -3,7 +3,7 @@ import requests
 import json
 from configparser import ConfigParser
 
-config_file_name = 'app_secrets.ini'
+config_file_name = '.\\app_secrets_template.ini'
 config = ConfigParser()
 config.read(config_file_name)
 

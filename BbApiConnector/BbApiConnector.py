@@ -48,7 +48,6 @@ class BbApiConnector(object):
             'client_secret': self._config['sky_app_information']['app_secret']
         }
         codes = requests.post(token_uri, data=params, headers=headers)
-
         self._config['tokens']['access_token'] = codes.json()['access_token']
         with open(self.config_file_name, 'w') as config_file:
             json.dump(self._config, config_file, indent=4)

@@ -4,3 +4,8 @@ build/
 dist/
 *.py[cod]
 *.egg-info
+*.ini
+resources/app_secrets_template.json
+resources/app_secrets_template.ini
+resources/app_secrets_template.json
+resources/app_secrets_template.ini
